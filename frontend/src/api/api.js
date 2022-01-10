@@ -7,6 +7,7 @@ export const api = {
         register: `${baseUrl}/dj-rest-auth/registration/`,
         emailVerification: `${baseUrl}/dj-rest-auth/registration/verify-email/`,
         resendemailVerification: `${baseUrl}/dj-rest-auth/registration/resend-email/`,
+        // resetPassword: `${baseUrl}/api/password/reset/`,
         resetPassword: `${baseUrl}/dj-rest-auth/password/reset/`,
         resetPasswordConfirm: `${baseUrl}/dj-rest-auth/password/reset/confirm/`,
     }

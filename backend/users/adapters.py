@@ -4,8 +4,6 @@ from django.http import HttpRequest
 from allauth.account.adapter import DefaultAccountAdapter
 from allauth.socialaccount.adapter import DefaultSocialAccountAdapter
 
-from allauth.account import urls
-
 
 class AccountAdapter(DefaultAccountAdapter):
     def is_open_for_signup(self, request: HttpRequest):
@@ -15,9 +13,7 @@ class AccountAdapter(DefaultAccountAdapter):
         if settings.DEBUG:
             context['activate_url'] = (
                 'http://localhost:3000/accounts/confirm-email/' +
-                context['key'],
-                # 'http://localhost:3000/accounts/password/reset/key/' +
-                # context['key']
+                context['key']
             )
         else:
             context['activate_url'] = (

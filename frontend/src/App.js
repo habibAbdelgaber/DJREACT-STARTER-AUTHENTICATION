@@ -26,7 +26,7 @@ function App() {
           <Route path="/accounts/confirm-email/:key" element={<EmailVerification />} />
           <Route path="/accounts/resend-email-verification" element={<ResendEmailVerification />} />
           <Route path="/accounts/password/reset" element={<PasswordReset />} />
-          <Route path="/accounts/password/reset/key/:key" element={<PasswordResetConfirm />} />
+          {/* <Route path="/accounts/password/reset/key/:key" element={<PasswordResetConfirm />} /> */}
         </Routes>
       </Layout>
     </Router>
